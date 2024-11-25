@@ -911,8 +911,8 @@ bindViewTap: function() {
 
 ![](https://images.gitee.com/uploads/images/2020/0807/093421_0d19875f_1280216.png)
 
-[源码下载地址](https://gitee.com/uemeng/open_answer_small_program)
 
-<img src="https://images.gitee.com/uploads/images/2020/0807/113011_66f44963_1280216.jpeg" width="350" alt="你的赞赏，是最好的支持" title="你的赞赏，是最好的支持">
+
+
 
 end.
