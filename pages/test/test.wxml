@@ -25,6 +25,8 @@
         <radio value="{{item}}" checked="{{questionList[shuffleIndex[index]].checked}}"/>{{item}}
       </label>
     </radio-group>
+    <image src="/image/javapub_qr.png" class="qrcode" mode="widthFix"></image>
+    <view class="tip">长按识别二维码，查看题目解析</view>
   </view>
   <!--按钮-->
   <view class='page_ft'>

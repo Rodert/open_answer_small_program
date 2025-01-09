@@ -1,4 +1,19 @@
 var json = {
+  "面试1v1": [
+    {
+      "question": "在 Java 的 HashMap 中，如果两个键的 hashCode() 方法返回相同的值，会发生什么？",
+      "option": {
+        "A": "HashMap 会抛出异常",
+        "B": "两个键会被视为相同的键",
+        "C": "两个键会被存储在同一个桶中",
+        "D": "HashMap 会忽略第二个键",
+      },
+      "true": "C",
+      "type": 1,
+      "scores": 10, 
+      "checked": false
+    },
+  ],
   "101-1": [
     {
       "question": "以下功能不属于政务微信/企业微信本地版可以自行配置开关的是?",
