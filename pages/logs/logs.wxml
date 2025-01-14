@@ -1,5 +1,7 @@
 <!--logs.wxml-->
 <view class="page">
+  <view class="page-title">用户信息不会上传服务器</view>
+
   <view class="table" wx:if="{{logs.length>0}}">
     <view class="tr bg-w">
       <view class="th first">时间</view>
