@@ -10,30 +10,37 @@
   </view>
   <!--内容-->
   <view class="page__bd">
-    <radio-group class="radio-group" bindchange="radioChange" wx:if="{{questionList[shuffleIndex[index]].type == 1}}">
+    <br/><br/>
+    参考答案： 
+    <br/><br/>
+    <view class="page__title" style="white-space: pre-wrap;">
+      {{questionList[shuffleIndex[index]].analyze}}
+    </view>
+
+    <!-- <radio-group class="radio-group" bindchange="radioChange" wx:if="{{questionList[shuffleIndex[index]].type == 1}}">
       <label class="radio my-choosebox" wx:for="{{questionList[shuffleIndex[index]].option}}" wx:for-index="key"  wx:for-item="value">
         <radio value="{{key}}" checked="{{questionList[shuffleIndex[index]].checked}}"/>{{key}}、{{value}}
       </label>
-    </radio-group>
-    <checkbox-group bindchange="checkboxChange" wx:elif="{{questionList[shuffleIndex[index]].type == 2}}">
+    </radio-group> -->
+    <!-- <checkbox-group bindchange="checkboxChange" wx:elif="{{questionList[shuffleIndex[index]].type == 2}}">
       <label class="checkbox my-choosebox" wx:for="{{questionList[shuffleIndex[index]].option}}" wx:for-index="key"  wx:for-item="value">
         <checkbox value="{{key}}" checked="{{questionList[shuffleIndex[index]].checked}}"/>{{key}}、{{value}}
       </label>
-    </checkbox-group>
-    <radio-group class="radio-group" bindchange="radioChange" wx:else>
+    </checkbox-group> -->
+    <!-- <radio-group class="radio-group" bindchange="radioChange" wx:else>
       <label class="radio my-choosebox" wx:for="{{questionList[shuffleIndex[index]].option}}">
         <radio value="{{item}}" checked="{{questionList[shuffleIndex[index]].checked}}"/>{{item}}
       </label>
-    </radio-group>
+    </radio-group> -->
     <image src="/image/javapub_qr.png" class="qrcode" mode="widthFix"></image>
     <view class="tip">长按识别二维码，查看题目解析</view>
   </view>
   <!--按钮-->
   <view class='page_ft'>
-    <view class='mybutton'>
+    <!-- <view class='mybutton'>
       <button bindtap='nextSubmit' wx:if="{{index == questionList.length-1}}">提交</button>
       <button bindtap='nextSubmit' wx:else>下一题</button>
       <text bindtap='outTest' class="toindex-btn">退出答题</text>
-    </view>
+    </view> -->
   </view>
 </view>

@@ -11,7 +11,8 @@ var json = {
       "true": "C",
       "type": 1,
       "scores": 10, 
-      "checked": false
+      "checked": false,
+      "analyze": "在Java的HashMap中，两个键的hashCode()方法返回相同的值，会发生哈希冲突（collision）。具体的行为是：1. 哈希冲突处理：如果两个键的hashCode()相同，HashMap会通过链表或树形结构来存储这些冲突的元素。具体的实现方式取决于HashMap的负载因子和冲突的数量。      - 链表法：在Java 8之前，如果发生哈希冲突，HashMap会使用链表来存储具有相同哈希码的键值对。多个键值对会按照插入顺序链接在一起，形成一个链表。      - 红黑树法：从Java 8开始，如果链表的长度超过一定阈值（默认是8），HashMap会将链表转换为红黑树，以提高查找效率。2. 键的比较：即使两个键的hashCode()相同，HashMap仍然会使用equals()方法来比较键是否相等。如果equals()返回true，则视为相同的键，后插入的键值对会覆盖前一个。总结来说，hashCode()相同的键会导致哈希冲突，但HashMap会通过链表或树结构来管理这些冲突，并且通过equals()来确保键的唯一性。"
     },
   ],
   "101-1": [
