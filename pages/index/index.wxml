@@ -1,11 +1,19 @@
 <!--index.wxml-->
 <view class="container">
   <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 授权登录 </button>
-    <block wx:else>
+    
+    <block>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
+
+    <!-- 必要时再授权，个人中心登陆授权授权 -->
+    <!-- <button wx:if="{{!hasUserInfo}}" open-type="getUserInfo" bindtap="getUserProfile"> 授权登录 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block> -->
+
   </view>
   <view class="usermotto">
     <text class="user-motto">点击头像进入小程序</text>

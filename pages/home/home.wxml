@@ -1,13 +1,31 @@
 <!--pages/home/home.wxml-->
 <view class="page">
+  <!-- 轮播 -->
+  <swiper
+    indicator-dots="true"  
+    autoplay="true"       
+    interval="3000"       
+    circular="true"       
+  >
+    <block wx:for="{{images}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" mode="aspectFill"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <!-- TODO 用户个人信息点击 点击登录微信 -->
+  <!-- <view class="user-info">
+    <image class="avatar" src="{{avatar}}" />
+    <text class="username">{{username}}</text>
+    <text class="member-status">{{memberStatus}}</text>
+  </view> -->
+
   <view class="page-title">请选择试题：</view>
-  <view class="flex-box">
-    <view class="flex-item"><view class="item bc_green" bindtap="toTestPage" data-testId="面试1v1">《面试1v1》</view></view>
-    <!-- <view class="flex-item"><view class="item bc_green" bindtap="toTestPage" data-testId="101-1">101-1</view></view> -->
-    <!-- <view class="flex-item"><view class="item bc_red" bindtap="toTestPage" data-testId="101-2">101-2</view></view> -->
-    <!-- <view class="flex-item"><view class="item bc_yellow" bindtap="toTestPage" data-testId="102">102</view></view> -->
-    <!-- <view class="flex-item"><view class="item bc_blue" bindtap="toTestPage" data-testId="104">104</view></view> -->
-    <!-- <view class="flex-item item-last"><view class="item bc_green" bindtap="toTestPage" data-testId="301-302">301-302</view></view> -->
-    <!-- <view class="flex-item"><view class="item bc_green">302</view></view> -->
+    <view class="flex-box">
+      <view class="flex-item"><view class="item bc_green" bindtap="toTestPage" data-testId="面试1v1">《面试1v1》
+      </view>
+    </view>
+
   </view>
 </view>

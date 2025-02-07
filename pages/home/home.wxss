@@ -30,3 +30,32 @@
 .item-last {
   flex: 1;
 }
+
+/* 轮播 */
+swiper {
+  width: 100%;  /* 轮播图宽度 */
+  height: 300px; /* 轮播图高度 */
+}
+image {
+  width: 100%; /* 图片宽度 */
+  height: 100%; /* 图片高度 */
+}
+
+/* 个人信息 */
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  font-size: 18px;
+  font-weight: bold;
+}
